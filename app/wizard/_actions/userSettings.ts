@@ -5,7 +5,7 @@ import { UpdateUserCurrencySchema } from "../../../schema/userSettings";
 import { redirect } from "next/navigation";
 import prisma from "../../../lib/prisma";
 
-export async function UpdateUserCurrency(currency: String) {
+export async function UpdateUserCurrency(currency: string) {
     const parsedBody = UpdateUserCurrencySchema.safeParse({
         currency,
     });
